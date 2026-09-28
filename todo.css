@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f7;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.todo-container {
+    width: 400px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px #aaa;
+}
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+.input-section {
+    display: flex;
+    gap: 10px;
+}
+#taskInput {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.add-button {
+    padding: 12px 18px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.add-button:hover {
+    background-color: #2980b9;
+}
+#taskList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+#taskList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-left: 5px solid #3498db;
+    border-radius: 5px;
+}
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+.delete-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 7px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.delete-button:hover {
+    background-color: #c0392b;
+}
+OUTPUT:
+       ______________________________
+      |                              |
+      |        TO-DO LIST APP        |
+      |______________________________|
+      [ Enter a task... ] [ Add ]
+      ┌────────────────────────────┐
+      │ Complete assignment [Delete]│
+      ├────────────────────────────┤
+      │ Read a book       [Delete] │
+      ├────────────────────────────┤
+      │ Go for a walk     [Delete] │
+      └────────────────────────────┘
